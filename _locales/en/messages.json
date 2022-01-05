@@ -1,0 +1,89 @@
+{
+    "appDesc": {
+        "message": "Dark Mode for Ufora"
+    },
+    "popup_reset": {
+        "message": "Reset"
+    },
+    "popup_disable": {
+        "message": "Disable"
+    },
+    "popup_enable": {
+        "message": "Enable"
+    },
+    "popup_background1": {
+        "message": "Background 1"
+    },
+    "popup_background2": {
+        "message": "Background 2"
+    },
+    "popup_selected": {
+        "message": "Selected"
+    },
+    "popup_accent1": {
+        "message": "Accent 1"
+    },
+    "popup_accent2": {
+        "message": "Accent 2"
+    },
+    "popup_accentText": {
+        "message": "Text on accent 1"
+    },
+    "popup_text": {
+        "message": "Text"
+    },
+    "popup_title": {
+        "message": "Titles"
+    },
+    "popup_link": {
+        "message": "Links"
+    },
+    "popup_visitedLink": {
+        "message": "Visited links"
+    },
+    "popup_darkLoginTip": {
+        "message": "Apply style to login pages"
+    },
+    "popup_darkLogin": {
+        "message": "Dark login"
+    },
+    "popup_remWhiteTip": {
+        "message": "Remove unchangeable white planes. (Right plane on home & top course). Disable requires refresh."
+    },
+    "popup_remWhite": {
+        "message": "Remove white"
+    },
+    "popup_darkTest": {
+        "message": "Dark tests"
+    },
+    "popup_darkTestTip": {
+        "message": "Make Tests dark (Experimental)"
+    },
+    "popup_json": {
+        "message": "Colorcode"
+    },
+    "popup_invalid_json": {
+        "message": "Invalid code"
+    },
+    "popup_jsonTip": {
+        "message": "Can be used to save/share settings"
+    },
+    "popup_logo": {
+        "message": "Logo color"
+    },
+    "popup_logoOringinal": {
+        "message": "Original"
+    },
+    "popup_logoWhite": {
+        "message": "White"
+    },
+    "popup_logoBlack": {
+        "message": "Black"
+    },
+    "popup_preset": {
+        "message": "Colorslot"
+    },
+    "popup_presetTip": {
+        "message": "Each slot can be modified independently"
+    }
+}

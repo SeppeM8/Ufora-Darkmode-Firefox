@@ -1,0 +1,90 @@
+{
+    "appDesc": {
+        "message": "Dark Mode voor Ufora"
+    },
+    "popup_reset": {
+        "message": "Reset"
+    },
+    "popup_disable": {
+        "message": "Uitschakelen"
+    },
+    "popup_enable": {
+        "message": "Inschakelen"
+    },
+    "popup_background1": {
+        "message": "Achtergrond 1"
+    },
+    "popup_background2": {
+        "message": "Achtergrond 2"
+    },
+    "popup_selected": {
+        "message": "Geselecteerd"
+    },
+    "popup_accent1": {
+        "message": "Accent 1"
+    },
+    "popup_accent2": {
+        "message": "Accent 2"
+    },
+    "popup_accentText": {
+        "message": "Tekst op accent 1"
+    },
+    "popup_text": {
+        "message": "Tekst"
+    },
+    "popup_title": {
+        "message": "Titels"
+    },
+    "popup_link": {
+        "message": "Links"
+    },
+    "popup_visitedLink": {
+        "message": "Bezochte links"
+    },
+    "popup_darkLoginTip": {
+        "message": "Verander login pagina's"
+    },
+    "popup_darkLogin": {
+        "message": "Dark login"
+    },
+    "popup_remWhiteTip": {
+        "message": "Verwijder witte vlakken. (Rechter vlak op home scherm & bovenaan cursus). Uitschakelen vereist refresh."
+    },
+    "popup_remWhite": {
+        "message": "Verwijder wit"
+    },
+    "popup_darkTest": {
+        "message": "Dark tests"
+    },
+    "popup_darkTestTip": {
+        "message": "Maak Tests dark (Experimental)"
+    },
+    "popup_json": {
+        "message": "Kleurcode"
+    },
+    "popup_invalid_json": {
+        "message": "Ongeldige code"
+    },
+    "popup_jsonTip": {
+        "message": "Kan gebruikt worden om instellingen op te slaan en te delen."
+    },
+    "popup_logo": {
+        "message": "Kleur logo"
+    },
+    "popup_logoOringinal": {
+        "message": "Origineel"
+    },
+    "popup_logoWhite": {
+        "message": "Wit"
+    },
+    "popup_logoBlack": {
+        "message": "Zwart"
+    },
+    "popup_preset": {
+        "message": "Kleurslot"
+    },
+    "popup_presetTip": {
+        "message": "Elk slot kan individueel ingesteld worden"
+    }
+}
+    

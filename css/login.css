@@ -1,0 +1,85 @@
+:root {
+    --background: black;
+    --widget-background: #202020;
+    --selected: #353535;
+
+    --accent: #0077ff;
+    --accent2: #00ccff;
+    --text-accent: #ffffff;
+
+    --text: #eeeeee;
+    --text-title: #0084ff;
+    --text-link: #ffef0a;
+    --text-link-visited: #77700f;
+}
+
+body {
+    color: var(--text) !important;
+    background-color: var(--background) !important;
+}
+
+/* box achter logo */
+.pageheader .page-logo {
+    background-color: var(--background) !important;
+}
+
+
+.bg-primary {
+    background-color: var(--widget-background) !important;
+}
+
+.linklist li a:hover {
+    border-bottom: 1px solid var(--accent) !important;
+}
+
+a {
+    color: var(--accent) !important;
+}
+
+/* FAQ */
+h2 {
+    color: var(--accent) !important;
+}
+
+
+/* Textbox rechts */
+#display {
+    background-color: var(--accent) !important;
+}
+
+/* error login */
+.alert-warning {
+    background-color: var(--widget-background) !important;
+}
+.alert {
+    color: var(--text) !important;
+}
+ /* Aanmelden */
+.btn-secondary {
+    background-color: var(--accent) !important;
+    color: var(--text-accent) !important;
+}
+.btn-secondary:hover {
+    background-color: var(--accent2) !important;
+}
+
+
+/* UGent CAS */
+.bg-primary h1 {
+    color: var(--text) !important;
+}
+
+/* Gebruikersnaam / Wachtwoord */
+label {
+    color: var(--text)
+}
+
+/* Disclaimer Cookies Toegankelijkheid */
+.page-footer a {
+    color: var(--text) !important;
+}
+
+/* C 2021 Univeriteit Gent */
+.page-footer .list-inline li {
+    color: var(--text) !important;
+}

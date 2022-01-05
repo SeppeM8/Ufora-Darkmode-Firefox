@@ -1,0 +1,515 @@
+
+:root {
+    --background: black;
+    --widget-background: #202020;
+    --selected: #353535;
+
+    --accent: #0077ff;
+    --accent2: #00ccff;
+    --text-accent: #ffffff;
+
+    --text: #eeeeee;
+    --text-title: #0084ff;
+    --text-link: #ffef0a;
+    --text-link-visited: #77700f;
+    
+
+    --d2l-color-ferrite:var(--accent); /* Icons enzo */
+    --d2l-color-celestine:var(--accent2); /* Icons enzo hover */
+    --d2l-dropdown-background-color: var(--widget-background); /* Dropdown */
+    --d2l-table-body-background-color: var(--widget-background); /* Tables */
+    --d2l-table-row-background-color-selected: var(--selected) ;/* Tables - Selected */
+    --d2l-color-regolith: var(--widget-background); /* Headers */
+    --d2l-color-gypsum: var(--widget-background); /* knop standaard */
+    --d2l-color-celestine-minus-1: var(--accent); /* Kalender buttons hover */
+    --d2l-color-mica: var(--selected); /*  knop hover */
+    --d2l-branding-primary-color: var(--accent); /* Balk top */
+    --d2l-color-primary-accent-indicator: var(--accent2);
+    --d2l-input-background-color: var(--selected); /* Input field */
+}
+
+.d2l-dropdown-content-width {
+    background-color: var(--widget-background) !important;
+}
+
+.d2l-token-receiver {
+    --initials-background-color: var(--accent) !important; /* Profielfoto */
+}
+
+/* Hover Icons */
+.d2l-imagelink d2l-icon {
+    transition: color .3s ease;
+    color: var(--accent) !important;
+}
+.d2l-imagelink d2l-icon:hover {
+    color: var(--accent2) !important;
+}
+
+body {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+}
+
+.d2l-body {
+    background-color: var(--background) !important;
+}
+
+.d2l-navigation-s-mobile-menu-content {
+    background-color: var(--background) !important;
+}
+
+/* Tiles */
+.d2l-tile {
+    background-color: var(--widget-background) !important;
+    color: var(--text);
+}
+
+/* Top */
+d2l-navigation-main-header {
+    background-color: var(--widget-background);
+}
+
+/* Ufora-agenda-ugent balk */
+.d2l-branding-navigation-background-color {
+    background-color: var(--accent) !important;
+}
+/* text */
+.d2l-branding-navigation-light-foreground-color a.d2l-navigation-s-link, .d2l-branding-navigation-light-foreground-color div.d2l-navigation-s-item>span, .d2l-branding-navigation-light-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-text, .d2l-branding-navigation-light-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon {
+    color: var(--text-accent) !important;
+}
+
+/* header vak */
+.d2l-navigation-s-header-logo-area a.d2l-navigation-s-link, .d2l-navigation-s-header-logo-area a.d2l-navigation-s-link:link, .d2l-navigation-s-header-logo-area a.d2l-navigation-s-link:visited {
+    color: var(--text) !important;
+}
+
+
+/* Icons Top */
+d2l-navigation-buttton-icon {
+    color: var(--accent);
+}
+
+/* Lijnen tussen Accountinstellingen voorgang afmelden */
+.d2l-minibar-menu-separator {
+    border-bottom: 1px dotted var(--selected) !important;
+}
+
+/* Meldingen Text */
+.daylight .d2l-textblock-secondary {
+    color: var(--text) !important;
+}
+
+/* Titel vak */
+.d2l-navigation-s-header-logo-area a.d2l-navigation-s-link {
+    color: var(--text) !important;
+}
+
+/* Icon hover */
+.daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:hover .d2l-tree-browser-icon {
+    color: var(--accent2) !important;
+}
+
+/* dropdown */
+d2l-menu-item-link { /* Ufora */
+    background-color: var(--widget-background);
+    color: var(--text);
+}
+d2l-menu-item-link:hover { /* Ufora */
+    background-color: var(--selected);
+    color: var(--text);
+}
+d2l-menu-item { /* UGent */
+    background-color: var(--widget-background);
+    color: var(--text);
+}
+d2l-menu-item:hover {
+    background-color: var(--selected);
+}
+
+/* Courses */
+.vui-list>.vui-selected {
+    background-color: var(--background) !important;
+}
+.vui-list>.vui-active {
+    background-color: var(--selected) !important;
+}
+d2l-dropdown-content {
+    --d2l-dropdown-background-color: var(--widget-background);
+}
+.d2l-link:link, .d2l-link:visited {
+    color: var(--text-title) !important;
+}
+.vui-list>.vui-active, .vui-list>.vui-active+li, .vui-list>.vui-selected+li {
+    color: var(--accent) !important;
+    border-top-color: var(--accent) !important;
+    border-bottom-color: var(--accent) !important;
+}
+.vui-list>li:first-child{
+    border-top-color: transparent !important;
+}
+
+/* Inhoud menu Background */
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--widget-background) !important;
+}
+.d2l-twopanelselector-side-bg.d2l-twopanelselector-side-sep, .d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--widget-background) !important;
+}
+/* Inhoud menu text */
+.daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor, .daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:link, .daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:visited, .daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:hover, .daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:focus {
+    color: var(--text) !important;
+}
+/* Inhoud menu text hover */
+.daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:hover .d2l-inline .d2l-textblock:first-child{
+    color: var(--accent) !important;
+}
+/* Inhoud menu text selected */
+.daylight #ContentModuleTree a.d2l-le-TreeAccordionItem-anchor:focus .d2l-inline .d2l-textblock:first-child {
+    color: var(--accent2) !important;
+}
+/* Inhoud menu small background selected */
+.daylight .d2l-repsonsive-collapse-layout #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor::before, .daylight .d2l-repsonsive-collapse-layout #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:link::before, .daylight .d2l-repsonsive-collapse-layout #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:visited::before, .daylight .d2l-repsonsive-collapse-layout #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:hover::before, .daylight .d2l-repsonsive-collapse-layout #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:focus::before {
+    background: var(--selected) !important;
+}
+.daylight #ContentNavigator .vui-list > .vui-selected {
+    background-color: var(--selected) !important;
+}
+
+/* Text */
+.d2l-typography, .d2l-typography .d2l-body-small {
+    color: var(--text) !important;
+}
+/* links */
+.d2l-htmlblock a:visited {
+    color: var(--text-link-visited) !important;
+}
+.d2l-htmlblock a, .d2l-htmlblock a:active, .d2l-htmlblock a:link {
+    color: var(--text-link) !important;
+}
+
+
+/* Tabel */
+.daylight .d2l-grid[type=data] > :only-child > tr.d_ggl2 > td, .daylight .d2l-grid[type=data] > :only-child > tr.d_ggl2 > th, .daylight .d2l-grid[type=list] > :only-child > tr.d_ggl2 > td, .daylight .d2l-grid[type=list] > :only-child > tr.d_ggl2 > th, .d2l-le-disc-post {
+    background-color: var(--widget-background) !important;
+}
+.daylight label .ds_i, .daylight .ds_b {
+    color: var(--text) !important;
+}
+.d2l-grid-cell {
+    background-color: var(--selected) !important;
+}
+
+.d2l-editable:hover {
+    background-color: var(--accent) !important;
+}
+
+.d2l-table>tbody, .d2l-table>tfoot {
+    background-color: var(--widget-background) !important;
+}
+
+/* Opdrachten file link */
+.daylight span.dfl a {
+    color: var(--accent) !important;
+}
+.daylight span.dfl a:hover{
+    color: var(--accent2) !important;
+}
+
+/* Discussies */
+/* hidable menu (discussies) */
+.d2l-accordion-content, .daylight .d2l-page-collapsepane-content, .daylight .d2l-page-collapsepane-content-inner {
+    background-color: var(--background) !important;
+}
+.d2l-accordion-header {
+    background-color: var(--widget-background) !important;
+}
+/* Pijtlebalk */
+.daylight .d2l-page-collapsepane-handle, .daylight .d2l-page-collapsepane.d2l-page-collapsepane-opening .d2l-page-collapsepane-handle {
+    background-color: var(--widget-background) !important;
+}
+/* pijltje */
+.daylight .d2l-page-collapsepane.d2l-page-collapsepane-opening .d2l-page-collapsepane-handle .d2l-page-collapsepane-handle-link {
+    border-right: 5px solid var(--accent2) !important;
+    border-left: none !important;
+}
+.daylight .d2l-page-collapsepane-handle-link {
+    border-left: 5px solid var(--accent2) !important;
+}
+/* Ongelezen left border */
+.d2l-grid-unread > th:first-child {
+    border-left: 4px solid var(--accent) !important;
+    background-image: none !important;
+}
+/* Lijst met discussies / Aanmeldingen */
+.daylight .d2l-tool-areas-item-selected > .d2l-tool-areas-link, .daylight .d2l-tool-areas-item-selected > .d2l-tool-areas-link:visited, .daylight .d2l-tool-areas-item-selected > .d2l-tool-areas-link:link, .daylight .d2l-tool-areas-item-selected > .d2l-tool-areas-link:hover, .daylight .d2l-tool-areas-item-selected > .d2l-tool-areas-link:focus {
+    color: var(--accent) !important;
+}
+.daylight .d2l-tool-areas-link {
+    color: var(--text) !important;
+}
+.daylight .d2l-tool-areas-bar {
+    border-top: 3px solid var(--accent) !important;
+}
+
+/* unread links banner */
+.daylight .d2l-le-disc-post-unread {
+    border-left: 4px solid var(--accent) !important;
+}
+
+/* groepen - popup */
+.ddial_o2 {
+    background-color: var(--widget-background) !important;
+}
+.d2l-shim {
+    background-color: var(--background) !important;
+}
+
+/* test pogingen bezig */
+.daylight .ds_c {
+    color: var(--accent) !important;
+}
+
+/* scores subheader */
+.daylight .d_ggl1 {
+    background-color: var(--widget-background) !important;
+}
+
+/* voortgang tabel links balkje onderaan */
+.d2l-datalist-style1 > .d2l-datalist {
+    padding-bottom: 0px !important;
+}
+
+/* bijeenkomsten */
+.d2l-grid-empty {
+    background-color: var(--widget-background) !important;
+    color: var(--text) !important;
+}
+
+/* Popup */
+.d2l-dialog-mvc .d2l-dialog-inner{
+    background-color: var(--background) !important;
+}
+
+/* koppelingen linkse kolom */
+.d_ua > .d_ua_h {
+    background-color: var(--widget-background) !important;
+}
+
+/* chatinstellingen - changed */
+.vui-changed {
+    background-color: var(--widget-background) !important;
+}
+
+/* Agenda */
+/* DagView */
+.d2l-panel, .d2l-le-calendar-day-all td, .d2l-le-calendar-day-events th, .d2l-le-calendar-day-events td {
+    background-color: var(--widget-background) !important;
+}
+/* Header */
+.d2l-page-header {
+    background-color: var(--widget-background) !important;
+}
+/* text */
+.d2l-le-calendar-day-header, .d2l-le-calendar-week-header {
+    color: var(--text) !important;
+}
+/* MaandView + Taken */
+.d2l-column-flip-side, .d2l-column-flip .d2l-column-side-bg {
+    background-color: var(--widget-background) !important;
+}
+td.d2l-le-calendar-weekend, th.d2l-le-calendar-weekend, .d2l-le-calendar-week-header.d2l-le-calendar-weekend, .d2l-le-calendar-week-all td.d2l-le-calendar-weekend, .d2l-le-calendar-week-events td.d2l-le-calendar-weekend{
+    background-color: var(--widget-background) !important;
+}
+.d2l-le-calendar-week-events td, .d2l-le-calendar-week-days .d2l-le-calendar-week-header, .d2l-le-calendar-week-all td, .d2l-le-calendar-out th, .d2l-le-calendar-out td {
+    background-color: var(--widget-background) !important;
+}
+.d2l-le-calendar-month th {
+    color: var(--text) !important;
+}
+/* dagnummer */
+.d2l-le-calendar-month td {
+    color: var(--text) !important;
+}
+.d2l-le-calendar-month td:hover {
+    color: var(--accent) !important;
+}
+.d2l-le-calendar-today {
+    background-color: var(--selected) !important;
+}
+/* bolletje kalender */
+.daylight .d2l-calendar-mini-event::after {
+    background-color: var(--accent) !important;
+}
+/* vandaag kalender */
+.daylight .d2l-calendar-mini-today {
+    color: var(--accent) !important;
+}
+/* hover */
+.daylight .d2l-calendar-mini-day:hover {
+    color: var(--accent2) !important;
+}
+/* selected kalender */
+.daylight .d2l-calendar-mini-selected {
+    background-color: var(--selected) !important;
+}
+/* ma di ...*/
+.daylight .d2l-calendar-mini th > abbr {
+    color: var(--text) !important;
+}
+/* dagen van vorige/volgende maand */
+.daylight .d2l-calendar-mini-other {
+    color: var(--selected) !important;
+}
+
+/* Meldingen */
+/* Pulse */
+.d2l-pulseapp-banner {
+    background-color: var(--widget-background) !important;
+}
+/* Header background */
+.daylight .d2l-header-top .d2l-box-h:first-child {
+    background-color: var(--background) !important;
+}
+
+/* Accountinstellingen */
+/* Titel */
+.daylight .d2l-page-header {
+    background-color: var(--background) !important;
+}
+/* Tabtitels */
+.d_tabs_text {
+    color: var(--text) !important;
+}
+/* TabsTitel background not selected*/
+.d_tabs_header .d_tabs_c {
+    background-color: var(--background) !important;
+    border-color: var(--background) !important;
+    border-bottom: solid 1px #cdd5dc !important;
+}
+/* TabsTitel background selected */
+.d_tabs_header td.d_tabs_c_s {
+    background-color: var(--widget-background) !important;
+    border-bottom: var(--widget-background) !important;
+}
+.d_tabs_link:hover {
+    background-color: var(--selected) !important;
+}
+.d_tabs_c_s .d_tabs_highlight, .d_tabs_c_s .d_tabs_link:focus .d_tabs_highlight {
+    background-color: var(--accent) !important;
+}
+/* background */
+div.d_tabs_container {
+    background-color: var(--widget-background);
+}
+.d2l-button[primary]:hover {
+    background-color: var(--accent2) !important;
+}
+.d2l-button[primary]{
+    background-color: var(--accent) !important;
+}
+
+
+/* Voortgang */
+/* Linker tabel*/
+.daylight .d2l-datalist-nesteditem-accordion, .daylight .d2l-datalist-nesteditem-accordion > .d2l-datalist-item-content.d2l-datalist-item-content-first {
+    background-color: var(--background) !important;
+}
+.daylight .d2l-textblock-strong, .d2l-datalist > .d2l-datalist-nesteditem-accordion .d2l-datalist > .d2l-datalist-nesteditem-accordion > .d2l-datalist-item-content > div {
+    color: var(--text) !important;
+}
+/* Tussenschot */
+d2l-datalist vui-list {
+    color: var(--selected) !important;
+}
+/* uitvouwbare dingen */
+.daylight .d2l-collapsepane .d2l-collapsepane-header, .daylight .d2l-collapsepane .d2l-collapsepane-content, .daylight .d2l-collapsepane .d2l-collapsepane-header.d2l-collapsepane-collapsed {
+    background-color: var(--widget-background) !important;
+    background: var(--widget-background) !important;
+}
+/* Voortgang van doelen buttons */
+.d2l-button-nml {
+    background: none !important;
+    background-color: var(--widget-background) !important;
+    color: var(--text) !important;
+}
+div.d2l-filterinline-group-viewswitcher > div > a.d2l-filterinline-item-selected {
+    background-color: var(--selected) !important;
+}
+/* progressBark */
+rect {
+    fill: var(--accent);
+    stroke: var(--accent);
+}
+path {
+    fill: var(--selected);
+}
+
+/* scores evolutie */
+.d2l-charttooltip {
+    background-color: var(--widget-background) !important;
+}
+
+/* Tooltip, vb: voorwaardelijk vrijgegeven */
+d2l-tooltip {
+    color: var(--text-accent);
+}
+
+/* inhoud doelen */
+.daylight .d2l-msg-container .d2l-msg-container-inner {
+    color: var(--text) !important;
+}
+.daylight .d2l-msg-container {
+    background-color: var(--widget-background) !important;
+    border: 1px solid var(--selected) !important;
+}
+
+/* ePortfolio */
+/* Mijn items filteren */
+div.d2l-filterinline-group-filter > div > a {
+    color: var(--text) !important;
+}
+.daylight div.d2l-filterinline-group-filter > div > a.d2l-filterinline-item-selected {
+    color: var(--accent) !important;
+}
+div.d2l-filterinline-group-filter > div > a:hover {
+    color: var(--accent2) !important;
+}
+
+/* checkbox enzo */
+.d2l-checkbox:hover, .d2l-radio:hover, .d2l-select:hover {
+    border-color: var(--accent) !important;
+}
+
+.d2l-checkbox:focus, .d2l-radio:focus, .d2l-select:focus {
+    border-color: var(--accent2) !important;
+
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--selected);
+    border: 1px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);    
+}
+::-webkit-scrollbar-thumb:active {
+    background: var(--accent2);
+}
+::-webkit-scrollbar-track {
+    background: var(--widget-background);
+    border: 0px dashed #ffffff;
+    border-radius: 22px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

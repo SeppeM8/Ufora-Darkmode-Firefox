@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>      
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 17px;
+      }
+
+      .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(13px);
+        -ms-transform: translateX(13px);
+        transform: translateX(13px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 17px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        padding: 5px;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 0px;
+        margin-left: -5px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      /* Tooltip arrow */
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 20px;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      .tooltipJ .tooltiptextJ {
+        left: -45px;
+      }
+
+      .tooltipJ .tooltiptextJ::after {        
+        left: 75px;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <table style="border-collapse: collapse; width:180px;">    
+      <tr style="height: 18px;">
+        <td><button id="reset" type="button">__MSG_popup_reset__</button></td>
+        <td><button id="enable" type="button" style= "width: 95px">Error</button></td>
+      </tr>
+      <tr style="height:4px;"></tr>
+      <tr style="border-top:1px solid white; height:5px;">
+        <td colspan="100%"></td>
+      </tr>      
+    </table> 
+    <div style="width: 180px;">
+      <div style="width: fit-content; margin: 0 auto;">
+        <button id="presetPrev" type="button"><</button>
+          <div class="tooltip tooltipJ"; style="width: 85px">
+            <label class="switch">
+              <span id="presetText" style="display: inline-block; width: 85px; text-align: center;">Error</span>
+            </label>
+            <span class="tooltiptext tooltiptextJ">__MSG_popup_presetTip__</span>
+          </div>
+        <button id="presetNext" type="button">></button>
+      </div>
+    </div>
+    <table style="border-collapse: collapse;  width:180px;"> 
+    <tr style="height:4px;"></tr>    
+      <tr>
+        <td><input id="cbackground" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_background1__</td>
+      </tr>
+      <tr>
+        <td><input id="cwidgetbackground" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_background2__</td>
+      </tr>
+      <tr>
+        <td><input id="cselected" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_selected__</td>
+      </tr>
+      <tr>
+        <td><input id="caccent" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_accent1__</td>
+      </tr>
+      <tr>
+        <td><input id="caccent2" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_accent2__</td>
+      </tr>
+      <tr>
+        <td><input id="ctextaccent" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_accentText__</td>
+      </tr>
+      <tr>
+        <td><input id="ctext" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_text__</td>
+      </tr>
+      <tr>
+        <td><input id="ctitle" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_title__</td>
+      </tr>
+      <tr>
+        <td><input id="clink" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_link__</td>
+      </tr>
+      <tr>
+        <td><input id="clinkvisited" type="text" style="width:55px"/></td>
+        <td>__MSG_popup_visitedLink__</td>
+      </tr>   
+      <tr style="height:4px;"></tr>
+      <tr style="border-top:1px solid white; height:5px;">
+        <td colspan="100%"></td>
+      </tr> 
+      <tr>
+        <td><input id="cjson" type="text" style="width:55px"/></td>
+        <td>
+          <div class="tooltip tooltipJ">
+            <label class="switch">
+              <span>__MSG_popup_json__</span>
+            </label>
+            <span class="tooltiptext tooltiptextJ">__MSG_popup_jsonTip__</span>
+          </div>
+        </td>
+      </tr>  
+      <tr style="height:4px;"></tr>
+      <tr style="border-top:1px solid white; height:5px;">
+        <td colspan="100%"></td>
+      </tr>      
+      <tr>
+        <td>
+          <select id="logo" name="color"  style="width:55px; color:black;">
+            <option value="original">__MSG_popup_logoOringinal__</option>
+            <option value="white">__MSG_popup_logoWhite__</option>
+            <option value="black">__MSG_popup_logoBlack__</option>
+          </select>
+        </td>
+        <td>__MSG_popup_logo__</td>
+      </tr>
+      <tr style="height:4px;"></tr>
+      <tr>
+        <td>
+          <div class="tooltip">
+            <label class="switch">
+              <input id="login" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span class="tooltiptext">__MSG_popup_darkLoginTip__</span>
+          </div>
+        </td> 
+        <td>__MSG_popup_darkLogin__</td>
+      </tr>
+      <tr style="height:4px;"></tr>
+      <tr>
+        <td>
+          <div class="tooltip">
+            <label class="switch">
+              <input id="removeWhite" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span class="tooltiptext">__MSG_popup_remWhiteTip__</span>
+          </div>
+        </td> 
+        <td>__MSG_popup_remWhite__</td>
+      </tr>
+      <tr style="height:4px;"></tr>
+      <tr>
+        <td>
+          <div class="tooltip">
+            <label class="switch">
+              <input id="darkTest" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span class="tooltiptext">__MSG_popup_darkTestTip__</span>
+          </div>
+        </td> 
+        <td>__MSG_popup_darkTest__</td>
+      </tr>
+    </table>
+    <script src="popup.js"></script>
+  </body>
+</html>
